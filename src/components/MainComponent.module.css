@@ -1,0 +1,17 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header {
+    font-family: "Montserrat", sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .main-header {
+        font-size: 40px;
+    }
+}
