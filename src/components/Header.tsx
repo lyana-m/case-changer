@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import Feedback from "./Feedback";
 import classes from "./Header.module.css";
 
 const Header = () => {
     const [theme, setTheme] = useState("light");
+    const [isFeedbackShown, setIsFeedbackShown] = useState(false);
 
     const toggleTheme = () => {
         if (theme === "light") {
@@ -13,6 +15,14 @@ const Header = () => {
             setTheme("light");
             localStorage.setItem("theme", "light");
         }
+    };
+
+    const showFeedback = () => {
+        setIsFeedbackShown(true);
+    };
+
+    const hideFeedback = () => {
+        setIsFeedbackShown(false);
     };
 
     useEffect(() => {
@@ -34,7 +44,8 @@ const Header = () => {
     return (
         <header className={classes.header}>
             <button onClick={toggleTheme}>{theme === "light" ? "Темная тема" : "Светлая тема"}</button>
-            <button>Нашли ошибку?</button>
+            <button onClick={showFeedback}>Нашли ошибку?</button>
+            {isFeedbackShown && <Feedback onConfirm={hideFeedback} />}
         </header>
     );
 };

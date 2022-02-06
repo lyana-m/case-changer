@@ -39,3 +39,32 @@ body {
     box-sizing: border-box;
     background-color: var(--background-color);
 }
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 20px 35px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    background: #1071ff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background: #1070ffe3;
+}
+
+.button:active {
+    transform: translateY(-1px);
+    background: #0a6cff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}

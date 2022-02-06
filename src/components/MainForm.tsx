@@ -61,7 +61,7 @@ const MainForm: React.FC<{ onDefine: (item: { word: string; wordCase: string }) 
                 <Dropdown onSelect={selectHandler} isValid={isCaseNameValid} />
             </div>
 
-            <button className={classes.button} type="submit">
+            <button className="button" type="submit">
                 Просклонять
             </button>
         </form>

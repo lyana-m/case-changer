@@ -1,0 +1,53 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    min-width: 600px;
+    z-index: 100;
+    overflow: hidden;
+    background-color: var(--dropdown-color);
+    padding: 70px 0;
+    border-radius: 3px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-field {
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-color);
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    width: 70%;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+}
+
+.feedback-form textarea {
+    cursor: default;
+}
