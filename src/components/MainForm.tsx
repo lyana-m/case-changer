@@ -62,7 +62,7 @@ const MainForm: React.FC<{ onDefine: (item: { word: string; wordCase: string }) 
             </div>
 
             <button className={classes.button} type="submit">
-                Применить
+                Просклонять
             </button>
         </form>
     );

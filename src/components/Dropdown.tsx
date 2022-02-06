@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { cases } from "../helpers/cases";
 import classes from "./Dropdown.module.css";
+import OutsideClickHandler from "react-outside-click-handler";
 
 const Dropdown: React.FC<{ onSelect: (item: string) => void; isValid: boolean }> = (props) => {
     const [isOpened, setIsOpened] = useState(false);
@@ -46,20 +47,25 @@ const Dropdown: React.FC<{ onSelect: (item: string) => void; isValid: boolean }>
                 >
                     <path
                         d="M1.8075 0.75L6 4.935L10.1925 0.75L11.25 1.8075L6 7.0575L0.75 1.8075L1.8075 0.75Z"
-                        fill="black"
                         fillOpacity="0.87"
                     />
                 </svg>
             </div>
             {isOpened && (
-                <ul className={classes["option-list"]}>
-                    {cases.map((item) => (
-                        <li onClick={() => selectOptionHandler(item)} className={classes.option} key={item.value}>
-                            <span className={classes["option_hover"]}></span>
-                            {item.value}
-                        </li>
-                    ))}
-                </ul>
+                <OutsideClickHandler
+                    onOutsideClick={() => {
+                        setIsOpened(false);
+                    }}
+                >
+                    <ul className={classes["option-list"]}>
+                        {cases.map((item) => (
+                            <li onClick={() => selectOptionHandler(item)} className={classes.option} key={item.value}>
+                                <span className={classes["option_hover"]}></span>
+                                {item.value}
+                            </li>
+                        ))}
+                    </ul>
+                </OutsideClickHandler>
             )}
         </div>
     );

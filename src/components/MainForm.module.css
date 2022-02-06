@@ -22,12 +22,14 @@
     font-family: inherit;
     font-size: 18px;
     font-weight: 400;
+    color: var(--text-color);
     -webkit-appearance: none;
     -ms-appearance: none;
     -moz-appearance: none;
     appearance: none;
     padding: 21px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    background: transparent;
+    border-bottom: 1px solid var(--border-color);
     width: 350px;
     outline: none;
     cursor: pointer;
@@ -37,7 +39,7 @@
     border-bottom: 1px solid red;
 }
 .control-container:not(.control-container_invalid) input:hover {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+    border-bottom: 1px solid var(--border-hover-color);
 }
 
 .control-container input:focus {
