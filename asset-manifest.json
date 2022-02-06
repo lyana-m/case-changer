@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/case-changer/static/css/main.3dbf7d5a.css",
+    "main.js": "/case-changer/static/js/main.33da66ac.js",
+    "index.html": "/case-changer/index.html",
+    "main.3dbf7d5a.css.map": "/case-changer/static/css/main.3dbf7d5a.css.map",
+    "main.33da66ac.js.map": "/case-changer/static/js/main.33da66ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3dbf7d5a.css",
+    "static/js/main.33da66ac.js"
+  ]
+}
