@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/case-changer/static/css/main.3dbf7d5a.css",
-    "main.js": "/case-changer/static/js/main.33da66ac.js",
+    "main.css": "/case-changer/static/css/main.f594aa83.css",
+    "main.js": "/case-changer/static/js/main.22d9ad6e.js",
     "index.html": "/case-changer/index.html",
-    "main.3dbf7d5a.css.map": "/case-changer/static/css/main.3dbf7d5a.css.map",
-    "main.33da66ac.js.map": "/case-changer/static/js/main.33da66ac.js.map"
+    "main.f594aa83.css.map": "/case-changer/static/css/main.f594aa83.css.map",
+    "main.22d9ad6e.js.map": "/case-changer/static/js/main.22d9ad6e.js.map"
   },
   "entrypoints": [
-    "static/css/main.3dbf7d5a.css",
-    "static/js/main.33da66ac.js"
+    "static/css/main.f594aa83.css",
+    "static/js/main.22d9ad6e.js"
   ]
 }
